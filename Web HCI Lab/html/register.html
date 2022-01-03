@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="validationscript.js"></script>
+</head>
+<body>
+    <!--Header-->
+    <div class="header">
+        <a href="homepage.html"><img src="../assets/Logo.png" alt=""></a>
+        
+        <div id="dropdown-toogle">
+
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="dropdown">
+                <a href="homepage.html"><li>Home</li></a>
+                <a href="album.html"><li>K-Pop Albums Catalog</li></a>
+                <a href="merchandise.html"><li>Merchandises Catalog</li></a>
+                <a href="testimonial.html"><li>Testimonial</li></a>
+                <a href="register.html"><li>Register</li></a>
+            </ul>
+        </div>
+    </div>
+
+    <!--Register-->
+
+    <div class="content">
+        <div class="form">
+            <div class="borderForm">
+                <form id = "form">
+                        
+                    <h2>Register Account</h2>
+                        
+                    <!-- Email -->
+                    
+                    <label for="email">
+                            <b>E-mail</b>
+                    </label>
+                    <input type="text" id="email" name="email" placeholder="Please enter your e-mail address">
+                        
+                    <!-- Username -->
+
+                    <label for="Username">
+                            <b>Username</b>
+                    </label>
+                    <input type="text" id="username" name="username" placeholder="Please enter username"><br>
+                        
+                    <!-- Password -->
+                    
+                    <label for="psw">
+                            <b>Password</b>
+                    </label>
+                    <input type="password" id="password" placeholder="Enter Password" name="psw" required><br>
+
+                    <!-- Re-enter Password -->
+
+                    <label for="psw-repeat">
+                            <b>Repeat Password</b>
+                    </label>
+                    <input type="password" id="repassword" placeholder="Repeat Password" name="psw-repeat" required><br>
+
+                    <!-- Full Name -->
+
+                    <label for="full-name">
+                        <b>Full Name</b>
+                    </label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Please enter your full name"><br>
+
+                     <!-- Age -->
+
+                    <label for="age">
+                        <b>Age</b>
+                    </label>
+                    <input type="text" id="age" name="age" placeholder="Please enter your age"><br>
+
+                    <!-- Gender -->
+
+                    <label for="Gender">
+                            <b>Gender</b>
+                    </label><br>
+
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                    <br><br> 
+
+                    <!-- Check Box -->
+
+                    <input type="checkbox" id="privacypolicy">
+                    <label for="box1">&MediumSpace; I have read the policy and agreed to comply</label><br>
+
+                    <input type="checkbox" id="box2">
+                    <label for="box2">&MediumSpace; Send me updates and offer from Store Del Luna</label><br><br>
+                    
+                    <!-- Error Message -->
+
+                    <label for="Error" id="errormsg">
+                        
+                    </label>
+                    <br>
+
+                    <!-- Submit -->
+                    
+                    <input type="button" value="Submit" onclick="validateRegister()">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer1">
+            <ul>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Report</a></li>
+            </ul>
+            <h2>Contact US</h2>
+            <div class="logoSosMed">
+                <a href="https://www.facebook.com/" target="_blank"><img class="logo" src="../assets/Facebook.png" alt=""></a>
+            
+                <a href="https://www.twitter.com" target="_blank"><img class="logo" src="../assets/Twitter.png" alt=""></a>
+            
+                <a href="https://www.instagram.com" target="_blank"><img class="logo" src="../assets/Instagram.png" alt=""></a>
+            
+            </div>
+        </div>
+
+        <div class="footer2">
+            <li><a href="#">Privacy Policy</a></li>
+            <p>2021 Store Del Luna | All Rights Reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>
